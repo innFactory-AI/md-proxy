@@ -1,5 +1,5 @@
 proxy:
-  image: 
+  image:
     repository: ghcr.io/innfactory-ai/md-proxy
     tag: 1.0.0
   env:
@@ -10,3 +10,5 @@ crawl:
     repository: unclecode/crawl4ai
     tag: 0.7.4
   port: 11235
+image:
+  tag: 1.0.0
