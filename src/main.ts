@@ -11,6 +11,7 @@ const app = express()
 app.use(express.json())
 
 app.post("/v1/scrape", async (req, res) => {
+    console.log(`Request to scrape URL: ${req.body.url}`)
     const { url } = req.body
 
     const response = await fetch(scrapeUrl, {
