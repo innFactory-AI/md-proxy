@@ -11,4 +11,4 @@ crawl:
     tag: 0.7.4
   port: 11235
 image:
-  tag: 1.0.0
+  tag: 1.0.1
