@@ -1,0 +1,25 @@
+{
+  "name": "md-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/esbuild src/main.ts --bundle --platform=node --target=node22 --outfile=dist/main.cjs",
+    "dev": "tsx src/main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "esbuild": "^0.25.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0"
+  }
+}

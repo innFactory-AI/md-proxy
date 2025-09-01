@@ -1,0 +1,8 @@
+name: md-proxy
+description: Helm Chart für MD Proxy
+version: 1.1.1
+apiVersion: v2
+keywords:
+  - docker-compose
+sources:
+home:

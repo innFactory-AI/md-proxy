@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: md-proxy
+  labels:
+    app: md-proxy
+spec:
+  ports:
+    - name: http-port
+      port: 80
+      targetPort: {{ .Values.proxy.env.PORT }}
+      protocol: TCP
+  selector:
+    app: md-proxy
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: crawl4ai
+  labels:
+    app: crawl4ai
+spec:
+  ports:
+    - name: http-port
+      port: {{ .Values.crawl.port }}
+      targetPort: {{ .Values.crawl.port }}
+      protocol: TCP
+  selector:
+    app: crawl4ai

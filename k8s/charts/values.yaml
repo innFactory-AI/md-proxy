@@ -1,0 +1,12 @@
+proxy:
+  image: 
+    repository: ghcr.io/innfactory-ai/md-proxy
+    tag: 1.0.0
+  env:
+    PORT: 3000
+    SCRAPE_URL: http://localhost:11235/crawl
+crawl:
+  image:
+    repository: unclecode/crawl4ai
+    tag: 0.7.4
+  port: 11235
